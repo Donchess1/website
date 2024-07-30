@@ -6,12 +6,15 @@ blinker==1.4
 certifi==2019.11.28
 chardet==3.0.4
 Click==7.0
+cloud-init==23.3.3
 colorama==0.4.3
+command-not-found==0.3
 configobj==5.0.6
 constantly==15.1.0
 cryptography==2.8
+cupshelpers==1.0
 dbus-python==1.2.16
-defer==1.0.2
+defer==1.0.6
 distro==1.4.0
 distro-info==0.23+ubuntu1.1
 Django==4.2.14
