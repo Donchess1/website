@@ -10,7 +10,6 @@ colorama==0.4.3
 configobj==5.0.6
 constantly==15.1.0
 cryptography==2.8
-cupshelpers==1.0
 dbus-python==1.2.16
 defer==1.0.6
 distro==1.4.0
@@ -42,6 +41,7 @@ packaging==23.2
 pexpect==4.6.0
 pillow==10.3.0
 protobuf==3.6.1
+psycopg2-binary==2.9.9
 pyasn1==0.4.2
 pyasn1-modules==0.2.1
 pycairo==1.16.2
