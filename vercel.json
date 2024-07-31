@@ -2,17 +2,16 @@
   "version": 2,
   "builds": [
     {
-      "src": "build.sh",
-      "use": "@vercel/static-build",
-      "config": {
-	      "distDir": "staticFiles_build"
-      }
-
-    },
-    {
       "src": "website/wsgi.py",
       "use": "@vercel/python",
       "config": {"maxLambdaSize": "15mb", "runtime": "python4.2.14"}
+    },
+    {
+      "src": "build.sh",
+      "use": "@vercel/static-build",
+      "config": {
+              "distDir": "staticFiles_build"
+      }
     }
   ],
   "routes": [
