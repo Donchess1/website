@@ -35,12 +35,9 @@ more-itertools==4.2.0
 netifaces==0.10.4
 oauthlib==3.1.0
 packaging==23.2
-pexpect==4.6.0
 pillow==10.3.0
 protobuf==3.6.1
 psycopg2-binary==2.9.9
-pyasn1==0.4.2
-pyasn1-modules==0.2.1
 pycairo==1.16.2
 pycodestyle==2.5.0
 pycups==1.9.73
