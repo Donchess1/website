@@ -34,11 +34,8 @@ MarkupSafe==1.1.0
 more-itertools==4.2.0
 netifaces==0.10.4
 oauthlib==3.1.0
-pyodbc==5.0.1
-pyOpenSSL==19.0.0
 requests==2.22.0
 requests-unixsocket==0.2.0
 sqlparse==0.4.4
 whitenoise==6.7.0
 zipp==1.0.0
-zope.interface==4.7.1
