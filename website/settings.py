@@ -25,7 +25,7 @@ SECRET_KEY = 'nsd4ej4z%j-0je6uh9nx=c*2@(t25lkby5w6w(c(=$rsw3$^hu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel,app', '.now.sh' 'localhost']
 
 
 # Application definition
@@ -76,14 +76,24 @@ WSGI_APPLICATION = 'website.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+#DATABASES = {
+ #       'default': {
+  #      'ENGINE': 'django.db.backends.sqlite3',
+   #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
+    #}
+#}
+
 DATABASES = {
-        'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-
-    }
-}
-
+        'default' : {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres.dwfvsrdtmhtvrceeggco',
+        'PASSWORD': 'Eriifeoluwa',
+        'HOST': 'aws-0-us-west-1.pooler.supabase.com',
+        'PORT': '6543',
+        }
+        }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
@@ -122,6 +132,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = 'static/'
-#STATIC_ROOT = BASE_DIR/'assets'
-STATICFILEES_STORAGE = "whitenoise.storage.CompressedManifesStaticFilesStorage"
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticFiles_build', 'grillz/static')
+#STATICFILEES_STORAGE = "whitenoise.storage.CompressedManifesStaticFilesStorage"
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'grillz/static'),
+        
