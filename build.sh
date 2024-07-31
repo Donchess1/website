@@ -1,3 +1,14 @@
+#!/usr/bin/env bash
+
+# Exit on error
+set -o errexit
+
+# Install dependencies
+pip install --upgrade pip
 pip install -r requirements.txt
-python3 manage.py collectstatic
-python3 manage.py migrate
+
+# Run migrations
+python manage.py migrate
+
+# Collect static files
+python manage.py collectstatic --noinput
